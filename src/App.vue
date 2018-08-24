@@ -1,6 +1,15 @@
 <template>
   <div class="app">
-    <Home/>
+    <header>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/albums">Albums</router-link>
+      <router-link to="/addalbum">Add Album</router-link>
+      <router-link to="/albumdetail">Album Detail</router-link>
+    </header>
+
+    <router-view></router-view>
+
   </div>
 </template>
 
