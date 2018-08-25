@@ -7,11 +7,11 @@
 </template>
 
 <script>
-  export default {
-    name: 'Album',
-    props: ['album']
+export default {
+  name: 'Album',
+  props: ['album']
 
-  }
+};
 </script>
 
 <style scoped>

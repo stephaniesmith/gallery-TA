@@ -15,7 +15,7 @@
 
 <script>
 import albumsApi from '../services/albumsApi.js';
-import Album from './Album.vue'
+import Album from './Album.vue';
 
 export default {
   name: 'Albums',
@@ -23,9 +23,9 @@ export default {
   data() {
     return {
       albums: albumsApi.getAlbums()
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>

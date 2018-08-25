@@ -18,27 +18,27 @@
 
 <script>
 
-  export default {
-    name: 'AddAlbum',
-    props: ['onComplete'],
-    data() {
-      return {
-        id: '',
-        title: '',
-        description: ''
-      }
-    },
-    methods: {
-      handleSubmit() {
-        const album = {
-          title: this.title,
-          description: this.description
-        }
-        this.onComplete(album);
-      }
-
+export default {
+  name: 'AddAlbum',
+  props: ['onComplete'],
+  data() {
+    return {
+      id: '',
+      title: '',
+      description: ''
+    };
+  },
+  methods: {
+    handleSubmit() {
+      const album = {
+        title: this.title,
+        description: this.description
+      };
+      this.onComplete(album);
     }
+
   }
+};
 </script>
 
 <style scoped>

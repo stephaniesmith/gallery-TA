@@ -10,10 +10,10 @@
 </template>
 
 <script>
-  export default {
-    name: 'ThumbnailViewer',
-    props: ['album']
-  }
+export default {
+  name: 'ThumbnailViewer',
+  props: ['album']
+};
 </script>
 
 <style scoped>

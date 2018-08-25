@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import Albums from './components/Albums.vue'
-import AddAlbum from './components/AddAlbum.vue'
-import AlbumDetail from './components/AlbumDetail.vue'
+import Home from './components/Home.vue';
+import About from './components/About.vue';
+import Albums from './components/Albums.vue';
+import AddAlbum from './components/AddAlbum.vue';
+import AlbumDetail from './components/AlbumDetail.vue';
 
 export default {
   name: 'app',
@@ -28,7 +28,7 @@ export default {
     AddAlbum,
     AlbumDetail
   }
-}
+};
 </script>
 
 <style scoped>

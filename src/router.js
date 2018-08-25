@@ -23,8 +23,8 @@ export default new VueRouter({
         { path: 'new', component: NewImage },
         { path: '', redirect: 'thumbnail' }
       ]
-     },
+    },
     { path: '/addalbum', component: AddAlbum },
     { path: '*', redirect: '/' }
   ]
-})
+});

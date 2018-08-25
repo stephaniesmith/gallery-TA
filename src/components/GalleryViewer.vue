@@ -9,23 +9,23 @@
 </template>
 
 <script>
-  export default {
-    name: 'GalleryViewer',
-    props: ['album'],
-    data() {
-      return {
-        imageIndex: 0
-      }
+export default {
+  name: 'GalleryViewer',
+  props: ['album'],
+  data() {
+    return {
+      imageIndex: 0
+    };
+  },
+  methods:{
+    handleIncrease() {
+      this.imageIndex ++;
     },
-    methods:{
-      handleIncrease() {
-        this.imageIndex ++;
-      },
-      handleDecrease() {
-        this.imageIndex --;
-      }
+    handleDecrease() {
+      this.imageIndex --;
     }
   }
+};
 </script>
 
 <style scoped>

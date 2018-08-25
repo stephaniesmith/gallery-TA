@@ -12,10 +12,10 @@
 </template>
 
 <script>
-  export default {
-    name: 'ListViewer',
-    props: ['album']
-  }
+export default {
+  name: 'ListViewer',
+  props: ['album']
+};
 </script>
 
 <style scoped>
