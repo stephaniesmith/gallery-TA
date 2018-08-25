@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import albumsApi from '../services/albumsApi';
+
   export default {
     data() {
       return {
@@ -26,6 +28,13 @@
       }
     },
     methods: {
+      handleSubmit() {
+        const album = {
+          title: this.title,
+          description: this.description
+        }
+        albumsApi.postAlbum(album);
+      }
 
     }
   },
