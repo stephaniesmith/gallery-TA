@@ -31,5 +31,10 @@ export default {
 </script>
 
 <style scoped>
-
+nav {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
 </style>
