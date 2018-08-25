@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 li {
   background-color: lightgrey;
   margin: 40px auto;

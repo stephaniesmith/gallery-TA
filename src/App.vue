@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,5 +43,6 @@ export default {
 header {
   display: flex;
   justify-content: space-around;
+  width: 100vw;
 }
 </style>
