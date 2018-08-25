@@ -42,11 +42,12 @@ import albumsApi from '../services/albumsApi';
           description: this.description,
           url: this.url
         }
-        this.onComplete(image);
+        this.handleAdd(image);
       },
       handleAdd(image) {
-        albumsApi.postImage(image);
-        this.$router.push(`/albums/${this.album.id}`);
+        const { id } = this.album
+        albumsApi.postImage(image, id);
+        this.$router.push(`/albums/${id}`);
       }
     }
   }
