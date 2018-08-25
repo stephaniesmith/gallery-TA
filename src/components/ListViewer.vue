@@ -1,6 +1,13 @@
 <template>
   <div>
-    List Viewer
+    <div class="thumbnail"
+      v-for="image in album.images"
+      :key="image.id"
+    > 
+      <h3>{{ image.title }}</h3>
+      <p>{{ image.description }}</p>
+      <p>{{ image.url }}</p>
+    </div>
   </div>
 </template>
 
