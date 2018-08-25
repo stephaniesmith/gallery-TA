@@ -34,4 +34,14 @@
   display: block;
 }
 
+img {
+  width: 75vw;
+}
+
+button {
+  margin: 20px 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
 </style>
