@@ -8,6 +8,7 @@
       <router-link to="thumbnail">Thumbail</router-link>
       <router-link to="gallery">Gallery</router-link>
       <router-link to="list">List</router-link>
+      <router-link to="new">Add Image</router-link>
     </nav>
 
     <router-view :album="album"></router-view>
