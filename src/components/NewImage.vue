@@ -24,33 +24,33 @@
 <script>
 import albumsApi from '../services/albumsApi';
 
-  export default {
-    name: 'NewImage',
-    props: ['album'],
-        data() {
-      return {
-        id: '',
-        title: '',
-        description: '',
-        url: ''
-      }
+export default {
+  name: 'NewImage',
+  props: ['album'],
+  data() {
+    return {
+      id: '',
+      title: '',
+      description: '',
+      url: ''
+    };
+  },
+  methods: {
+    handleSubmit() {
+      const image = {
+        title: this.title,
+        description: this.description,
+        url: this.url
+      };
+      this.handleAdd(image);
     },
-    methods: {
-      handleSubmit() {
-        const image = {
-          title: this.title,
-          description: this.description,
-          url: this.url
-        }
-        this.handleAdd(image);
-      },
-      handleAdd(image) {
-        const { id } = this.album
-        albumsApi.postImage(image, id);
-        this.$router.push(`/albums/${id}`);
-      }
+    handleAdd(image) {
+      const { id } = this.album;
+      albumsApi.postImage(image, id);
+      this.$router.push(`/albums/${id}`);
     }
   }
+};
 </script>
 
 <style scoped>

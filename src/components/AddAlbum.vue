@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AlbumForm from './AlbumForm'
+import AlbumForm from './AlbumForm';
 import albumsApi from '../services/albumsApi';
 
 export default {
@@ -20,7 +20,7 @@ export default {
       this.$router.push(`/albums/${added.id}`);
     }
   }
-}
+};
 </script>
 
 <style scoped>

@@ -51,7 +51,7 @@ const albums = [
       }
     ]
   }
-]
+];
 
 export default {
   getAlbums() {
@@ -71,4 +71,4 @@ export default {
     album.images.push(image);
     return image;
   }
-}
+};

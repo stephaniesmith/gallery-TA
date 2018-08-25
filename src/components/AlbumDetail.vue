@@ -16,19 +16,19 @@
 </template>
 
 <script>
-import albumsApi from '../services/albumsApi'
+import albumsApi from '../services/albumsApi';
 
 export default {
   name: 'AlbumDetail',
   data() {
     return {
       album: null
-    }
+    };
   },
   created() {
     this.album = albumsApi.getAlbum(this.$route.params.id);
   }
-}
+};
 </script>
 
 <style scoped>
