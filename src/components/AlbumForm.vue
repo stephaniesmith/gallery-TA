@@ -2,24 +2,25 @@
   <form @submit.prevent="handleSubmit">
     <p>
       <label>
-        Title: <input v-modle="title">
+        Title: <input v-model="title">
       </label>
-    <p>
+    </p>
     <p>
       <label>
-        Description: <input v-modle="description">
+        Description: <input v-model="description">
       </label>
     <p>
-    <p>
+    </p>
       <button>add</button>
-    <p>
+    </p>
   </form>
 </template>
 
 <script>
-import albumsApi from '../services/albumsApi';
 
   export default {
+    name: 'AddAlbum',
+    props: ['onComplete'],
     data() {
       return {
         id: '',
@@ -33,11 +34,11 @@ import albumsApi from '../services/albumsApi';
           title: this.title,
           description: this.description
         }
-        albumsApi.postAlbum(album);
+        this.onComplete(album);
       }
 
     }
-  },
+  }
 </script>
 
 <style scoped>
