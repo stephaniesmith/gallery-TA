@@ -25,7 +25,7 @@
       return {
         id: '',
         title: '',
-        description: '',
+        description: ''
       }
     },
     methods: {

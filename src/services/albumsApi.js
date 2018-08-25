@@ -64,5 +64,11 @@ export default {
     album.id = shortid.generate();
     albums.push(album);
     return album;
+  },
+  postImage(image, id) {
+    image.id = shortid.generate();
+    let album = this.getAlbum(id);
+    album.images.push(image);
+    return image;
   }
 }

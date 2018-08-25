@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 class="add">
-      Add
+      Add Album
     </h3>
     <AlbumForm :onComplete="handleAdd"/>
   </div>
