@@ -10,7 +10,7 @@
         Description: <input v-model="description">
       </label>
     <p>
-    </p>
+    <p>
       <button>add</button>
     </p>
   </form>
